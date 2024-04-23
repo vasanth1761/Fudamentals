@@ -8,7 +8,7 @@ public class Student extends StudentMain implements UpdatedRules{
 		return null;
 	}
 	public void newRules() {
-		System.out.println("Students are meant to follow our new rules");
+		System.out.println("----THANK YOU FOR DETAILS----");
 	}
 
 }

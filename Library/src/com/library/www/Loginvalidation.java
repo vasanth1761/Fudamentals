@@ -164,7 +164,7 @@ public class Loginvalidation {
 				b=false;
 			  default:
 				  System.out.println("Enter the valid data");
-			      break;
+			      
 				
 			}
 	    }

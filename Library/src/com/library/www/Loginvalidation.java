@@ -12,7 +12,7 @@ public class Loginvalidation {
 	
 	 while(true) {
 		 String s1="^[a-zA-Z]+$";
-			String s2="(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*\\d).{5,}";
+		 String s2="(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*\\d).{5,}";
 			
 		if(account.equals("y")||account.equals("Y"))
 		{    
@@ -128,7 +128,25 @@ public class Loginvalidation {
 				System.out.println("Available");
 				System.out.println("1.IRONMAN"+"\n"+"2.SUPERMAN"+"\n"+"3.DEADPOOL");
 				System.out.println("Select the type:");
-				String type=sc.next();
+				int type=sc.nextInt();
+				switch(type)
+				{
+			       case 1:
+			    	   System.out.println("part 1 or part2");
+			    	   int part=sc.nextInt();
+			    	   System.out.println("-The book is available-");
+			    	   break;
+			       case 2:
+			    	   System.out.println("part 1 or part2");
+			    	   int superman=sc.nextInt();
+			    	   System.out.println("-The book is available-");
+			    	   break;
+			       case 3:
+			    	   System.out.println("part 1 or part2");
+			    	   int deadpool=sc.nextInt();
+			    	   System.out.println("-The book is available-");
+			    	   break;
+				}
 				b=false;
 				break;
 			case "horror":
@@ -136,7 +154,26 @@ public class Loginvalidation {
 				System.out.println("Available");
 				System.out.println("1.DRACULA"+"\n"+"2.IT"+"\n"+"3.PET SEMETARY");
 				System.out.println("Select the type:");
-				String horror=sc.next();
+			    int  horror=sc.nextInt();
+			    switch(horror)
+			    
+				{
+			       case 1:
+			    	   System.out.println("part 1 or part2");
+			    	   int part=sc.nextInt();
+			    	   System.out.println("-The book is available-");
+			    	   break;
+			       case 2:
+			    	   System.out.println("part 1 or part2");
+			    	   int superman=sc.nextInt();
+			    	   System.out.println("-The book is available-");
+			    	   break;
+			       case 3:
+			    	   System.out.println("part 1 or part2");
+			    	   int deadpool=sc.nextInt();
+			    	   System.out.println("-The book is available-");
+			    	   break;
+			    }
 				b=false;
 				break;
 			case "science fiction":
@@ -144,7 +181,25 @@ public class Loginvalidation {
 				System.out.println("Available");
 				System.out.println("1.STATION ELEVAN"+"\n"+"2.DUNE"+"\n"+"3.THE MARTIAN");
 				System.out.println("Select the type:");
-				String science=sc.next();
+				int science=sc.nextInt();
+				switch(science)
+				{
+			       case 1:
+			    	   System.out.println("part 1 or part2");
+			    	   int part=sc.nextInt();
+			    	   System.out.println("-The book is available-");
+			    	   break;
+			       case 2:
+			    	   System.out.println("part 1 or part2");
+			    	   int superman=sc.nextInt();
+			    	   System.out.println("-The book is available-");
+			    	   break;
+			       case 3:
+			    	   System.out.println("part 1 or part2");
+			    	   int deadpool=sc.nextInt();
+			    	   System.out.println("-The book is available-");
+			    	   break;
+				}
 				b=false;
 			    break;
 			case "adventure":
@@ -152,15 +207,52 @@ public class Loginvalidation {
 				System.out.println("Available");
 				System.out.println("1.THE ROAD"+"\n"+"2.HARRY PORTER"+"\n"+"3.TREASURE ISLANDS");
 				System.out.println("Select the type:");
-				String adventure=sc.next();
+				int adventure=sc.nextInt();
+				switch(adventure)
+				{
+			       case 1:
+			    	   System.out.println("part 1 or part2");
+			    	   int part=sc.nextInt();
+			    	   System.out.println("-The book is available-");
+			    	   break;
+			       case 2:
+			    	   System.out.println("part 1 or part2");
+			    	   int superman=sc.nextInt();
+			    	   System.out.println("-The book is available-");
+			    	   break;
+			       case 3:
+			    	   System.out.println("part 1 or part2");
+			    	   int deadpool=sc.nextInt();
+			    	   System.out.println("-The book is available-");
+			    	   break;
+				}
 				b=false;
 			    break;
 			case "fantasy":
 				System.out.println("---GREAT---");
 				System.out.println("Available");
+			
 				System.out.println("1.GAME OF THRONES"+"\n"+"2.THE TWO TOWERS"+"\n"+"3.CITY OF GLASS+"+"\n"+"THE HOUSE OF DRAGONS");
 				System.out.println("Select the type:");
-				String fantasy=sc.next();
+				int fantasy=sc.nextInt();
+				switch(fantasy)
+				{
+			       case 1:
+			    	   System.out.println("part 1 or part2");
+			    	   int part=sc.nextInt();
+			    	   System.out.println("-The book is available-");
+			    	   break;
+			       case 2:
+			    	   System.out.println("part 1 or part2");
+			    	   int superman=sc.nextInt();
+			    	   System.out.println("-The book is available-");
+			    	   break;
+			       case 3:
+			    	   System.out.println("part 1 or part2");
+			    	   int deadpool=sc.nextInt();
+			    	   System.out.println("-The book is available-");
+			    	   break;
+				}
 				b=false;
 			  default:
 				  System.out.println("Enter the valid data");

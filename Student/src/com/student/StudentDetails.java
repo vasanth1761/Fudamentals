@@ -25,20 +25,76 @@ public class StudentDetails {
     		  id=sc.nextInt();
     	  }
       }
-      
       student.setId(id);
+      
+      String s1="^[a-zA-Z]+$";
       System.out.printf("Enter the student name:");
       String name=sc.next();
+      while(true)
+      {
+    	  if(name.matches(s1))
+    	  {
+    		  break;
+    	  }
+    	  else
+    	  {
+    		  System.out.println("Enter the valid data:");
+    		  name=sc.next();
+    	  }
+      }
+      
+      
       student.setName(name);
       System.out.printf("Enter the Location:");
       String location=sc.next();
+      while(true)
+      {
+    	  if(location.matches(s1))
+    	  {
+    		  break;
+    	  }
+    	  else
+    	  {
+    		  System.out.println("Enter the valid data:");
+    		  location=sc.next();
+    	  }
+      }
       student.setLocation(location);
+      
+      
       System.out.printf("Enter the student bloodgroup:");
       String bloodgroup=sc.next();
+      while(true)
+      {
+    	  if(bloodgroup.matches(s1))
+    	  {
+    		  break;
+    	  }
+    	  else
+    	  {
+    		  System.out.println("Enter the valid data:");
+    		  bloodgroup=sc.next();
+    	  }
+      }
       student.setBloodgroup(bloodgroup);
+      
       System.out.printf("Enter the student drgree");
       String degree =sc.next();
+      while(true)
+      {
+    	  if(degree.matches(s1))
+    	  {
+    		  break;
+    	  }
+    	  else
+    	  {
+    		  System.out.println("Enter the valid data:");
+    		  degree=sc.next();
+    	  }
+      }
+      
       student.setDegree(degree);
+      
       s.detail(student.getId());
       s.detail(student.getName());
       s.detail(student.getLocation(),student.getBloodgroup(),student.getDegree());

@@ -7,12 +7,15 @@ public class Mainbody {
 		// TODO Auto-generated method stub
 		Scanner sc=new Scanner(System.in);
 		System.out.println("->----->-----WELCOME TO THIS PORTAL------<-----<-");
-		System.out.printf("1-ADMIN OR 2-USER:");
+		System.out.println("1-ADMIN OR 2-USER:");
+
 		int adminuser=sc.nextInt();
 		switch(adminuser)
 		{
 		case 1:
+			
 			String username1="vasanth";
+			System.out.println("------------------------------------------");
 			System.out.println("USERNAME:");
 			String username=sc.next();
 			while(true)
@@ -23,15 +26,32 @@ public class Mainbody {
 				}
 				else
 				{
-					System.out.printf("INVALID USER NAME ");
-					System.out.printf("Enter the user name again:");
+					System.out.println("INVALID USER NAME ");
+					System.out.println("Enter the user name again:");
+					username=sc.next();
 				}
 			}
+			String password1="Vasanth1761";
 			System.out.println("PASSWORD:");
 			String password=sc.next();
-			System.out.println("-------WELCOME USER--------");
+			while(true)
+			{
+				if(password.equals(password1))
+				{
+					break;
+				}
+				else
+				{
+					System.out.println("INVALID PASSWORD");
+					System.out.println("Enter the password again");
+					password=sc.next();
+				}
+			}
+			System.out.println("        -------WELCOME ADMIN--------");
 			System.out.println("1.ADD A BOOK"+"\n"+"2.DELETE A BOOK");
+			System.out.println("-------------------------------------");
 			int adddelete=sc.nextInt();
+	
 			switch(adddelete)
 			{
 			case 1:
@@ -69,7 +89,6 @@ public class Mainbody {
 				
 				
 			}
-			
 			break;
 		case 2:
 			LibraryVerification.libraryuserportal();

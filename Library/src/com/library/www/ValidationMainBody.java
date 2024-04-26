@@ -43,14 +43,7 @@ public static void passwordloginadmin()
 	}
 	
 }
-public static void toselectadddelte(int adddelete)
 
-{
-	Scanner sc=new Scanner(System.in);
-	
-	
-	
-}
   
 public static int addbook()
 {
@@ -178,10 +171,30 @@ public static void bookpartvalidation()
 		}
 		else
 		{
-			System.out.println("Enter the valid data:");
+			System.out.println("PART IS NOT AVAILABLE:");
 			part=sc.nextInt();
 		}
 	}
+	
+}
+public static int booktypevalid()
+{
+	Scanner sc=new Scanner(System.in);
+	int type = sc.nextInt();
+	while(true)
+	{
+		if(type==1||type==2||type==3)
+		{
+			return type;
+		}
+		else
+		{
+			System.out.println("Enter the mention book above");
+			type = sc.nextInt();
+			
+		}
+	}
+	
 	
 }
 }

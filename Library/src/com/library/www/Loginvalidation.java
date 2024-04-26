@@ -9,9 +9,7 @@ public class Loginvalidation {
 		Scanner sc = new Scanner(System.in);
 
 		while (true) {
-//		 String s1="^[a-zA-Z]+$";
-//		 String s2="(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*\\d).{5,}";
-//			
+
 			if (account.equals("y") || account.equals("Y")) {
 				System.out.println("---WELCOME TO LOGIN PAGE----");
 				System.out.println("USERNAME:");
@@ -64,9 +62,9 @@ public class Loginvalidation {
 				System.out.println("Available");
 				System.out.println("1.IRONMAN" + "\n" + "2.SUPERMAN" + "\n" + "3.DEADPOOL");
 				System.out.println("Select the type:");
-				int type = sc.nextInt();
-				
-				switch (type) {
+				int type=ValidationMainBody.booktypevalid();
+      
+		        switch (type) {
 				case 1:
 					System.out.println("part 1 or part2");
 					ValidationMainBody.bookpartvalidation();
@@ -82,7 +80,11 @@ public class Loginvalidation {
 					ValidationMainBody.bookpartvalidation();
 					System.out.println("-The book is available-");
 					break;
+				default:
+					System.out.println("The book is not available");
+					System.out.println("Enter the proper book name");
 				}
+				
 				b = false;
 				break;
 			case "horror":
@@ -90,7 +92,7 @@ public class Loginvalidation {
 				System.out.println("Available");
 				System.out.println("1.DRACULA" + "\n" + "2.IT" + "\n" + "3.PET SEMETARY");
 				System.out.println("Select the type:");
-				int horror = sc.nextInt();
+				int horror = ValidationMainBody.booktypevalid();
 				
 					switch (horror)
 
@@ -119,7 +121,7 @@ public class Loginvalidation {
 				System.out.println("Available");
 				System.out.println("1.STATION ELEVAN" + "\n" + "2.DUNE" + "\n" + "3.THE MARTIAN");
 				System.out.println("Select the type:");
-				int science = sc.nextInt();
+				int science = ValidationMainBody.booktypevalid();;
 				switch (science) {
 				case 1:
 					System.out.println("part 1 or part2");
@@ -144,7 +146,7 @@ public class Loginvalidation {
 				System.out.println("Available");
 				System.out.println("1.THE ROAD" + "\n" + "2.HARRY PORTER" + "\n" + "3.TREASURE ISLANDS");
 				System.out.println("Select the type:");
-				int adventure = sc.nextInt();
+				int adventure = ValidationMainBody.booktypevalid();;
 				switch (adventure) {
 				case 1:
 					System.out.println("part 1 or part2");
@@ -168,10 +170,9 @@ public class Loginvalidation {
 				System.out.println("---GREAT---");
 				System.out.println("Available");
 
-				System.out.println("1.GAME OF THRONES" + "\n" + "2.THE TWO TOWERS" + "\n" + "3.CITY OF GLASS+" + "\n"
-						+ "THE HOUSE OF DRAGONS");
+				System.out.println("1.GAME OF THRONES" + "\n" + "2.THE HOUSE OF DRAGONS" + "\n" + "3.CITY OF GLASS+" );
 				System.out.println("Select the type:");
-				int fantasy = sc.nextInt();
+				int fantasy =ValidationMainBody.booktypevalid();
 				switch (fantasy) {
 				case 1:
 					System.out.println("part 1 or part2");
